@@ -54,6 +54,7 @@ function StrSX(strings, ...values) {
 
 	// Wrap the DOM creation in a computation
 	let dom;
+
 	function computation() {
 		const newDom = transpile(result, functionsMap, signalsMap).toDom();
 
